@@ -1,4 +1,5 @@
 let frog, lilypads, flies;
+let bigJumpSound, smallJumpSound;
 
 let countdown = 12;
 
@@ -18,6 +19,11 @@ function preload() {
 	let flyImg = spriteArt(flyText);
 	flies = new Group();
 	flies.addImg(flyImg);
+
+	bigJumpSound = loadSound('sounds/bigJump.wav');
+	bigJumpSound.setVolume(0.01);
+	smallJumpSound = loadSound('sounds/smallJump.wav');
+	smallJumpSound.setVolume(0.01);
 }
 
 function setup() {
@@ -89,12 +95,14 @@ function draw() {
 		if (kb.presses('ArrowUp')) {
 			// little jump
 			frog.ani.play();
+			smallJumpSound.play();
 			frog.velocity.y = -1.4;
 			frog.velocity.x = 0.96;
 			score++;
 		} else if (kb.presses('ArrowRight')) {
 			// BIG jump!
 			frog.ani.play();
+			bigJumpSound.play();
 			frog.velocity.y = -2;
 			frog.velocity.x = 1.35;
 			score += 2;
@@ -117,7 +125,8 @@ async function reset() {
 	text('Game Over! Your score was ' + score, 6, 2);
 	await delay(2000);
 	text('                                 ', 6, 2);
-	countdown = 12;
+	score = 0;
+	countdown = 11;
 	frog.velocity.x = 0;
 	frog.velocity.y = 0;
 	frog.x = 16;
