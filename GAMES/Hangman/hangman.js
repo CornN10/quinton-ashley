@@ -1,5 +1,24 @@
 const hangman = [
 	`
+  
+=========`,
+	`
+  
+      |
+      |
+      |
+      |
+      |
+=========`,
+	`
+  +---+
+      |
+      |
+      |
+      |
+      |
+=========`,
+	`
   +---+
   |   |
       |
@@ -66,33 +85,49 @@ async function start() {
 
 	/* Part A: split the wordsList String into an array called words, then choose a random word */
 	words = wordsList.split(' ');
-	chosenWord = words[round(random((0, words.length - 1)))];
-	log(chosenWord);
-	lines = [];
-	for (let i = 0; i < chosenWord.length; i++) {
-		lines.push('_');
-	}
+	let playAgain = 'yes';
+	while (playAgain == 'yes') {
+		chosenWord = words[round(random((0, words.length - 1)))];
+		log(chosenWord);
 
-	/* Part B: make an array with a line for each letter in the word */
-	// Example word: 'quiz'
-	// lines -> ['_', '_', '_', '_']
+		/* Part B: make an array with a line for each letter in the word */
+		// Example word: 'quiz'
+		// lines -> ['_', '_', '_', '_']
+		lines = [];
+		for (let i = 0; i < chosenWord.length; i++) {
+			lines.push('_');
+		}
 
-	/* Part C: show the lines for the word below the hangman art */
-	let x = 0;
-	while (lines.includes('_')) {
-		let guess = await prompt(hangman[x] + '\n\n' + lines.join(' '));
-
-		let isCorrect = false;
-		for (let j = 0; j < chosenWord.length; j++) {
-			if (guess == chosenWord[j]) {
-				lines[j] = guess;
-				isCorrect = true;
+		/* Part C: show the lines for the word below the hangman art */
+		let x = 0;
+		let lose = false;
+		while (lines.includes('_')) {
+			let guess = await prompt(hangman[x] + '\n\n' + lines.join(' '));
+			if (guess == chosenWord) {
+				break;
+			}
+			let isCorrect = false;
+			for (let j = 0; j < chosenWord.length; j++) {
+				if (guess == chosenWord[j]) {
+					lines[j] = guess;
+					isCorrect = true;
+				}
+			}
+			if (isCorrect == false) {
+				x++;
+			}
+			if (x == hangman.length) {
+				lose = true;
+				break;
 			}
 		}
-		if (isCorrect == false) {
-			x++;
+		if (lose) {
+			await alert('You lost! The word was ' + chosenWord);
+		} else {
+			await alert('You won!');
 		}
+		playAgain = await prompt('Type yes if you want to play again');
 	}
-
+	await alert('Thanks for playing!');
 	exit(); // exits the game
 } // end of the start function
