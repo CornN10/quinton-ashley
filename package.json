@@ -8,7 +8,7 @@
 		"p5": "^1.4.2",
 		"p5.play": "^3.0.83",
 		"planck": "^1.0.0-alpha.4",
-		"quintos": "^4.0.0"
+		"quintos": "^5.0.2"
 	},
 	"license": "GPL-3.0-only",
 	"scripts": {
@@ -19,5 +19,5 @@
 		"postversion": "git push",
 		"relink": "npm link ../../pkg/quintos"
 	},
-	"version": "1.1.16"
+	"version": "1.1.17"
 }
