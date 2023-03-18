@@ -1,60 +1,58 @@
-{
-	"films": [
-		{
-			"id": "01",
-			"title": "Harry Potter and The Prisoner of Azkaban",
-			"genre": 0,
-			"rating": 4,
-			"description": "Harry, Ron and Hermoine return to Hogwarts just as they learn about Sirius Black and his plans to kill Harry. However, when Harry runs into him, he learns that the truth is far from reality."
-		},
-		{
-			"id": "02",
-			"title": "Titanic",
-			"genre": 1,
-			"rating": 2,
-			"description": "Ship sinks and Leonardo DiCaprio dies"
-		},
-		{
-			"id": "03",
-			"title": "Groundhog Day",
-			"genre": 2,
-			"rating": 4,
-			"description": "Phil, a self-centred weatherman, goes to the town of Punxsutawney for an assignment. He is later shocked when he wakes up the next morning and realises that he is reliving the same day over and over."
-		},
-		{
-			"id": "04",
-			"title": "The Godfather",
-			"genre": 1,
-			"rating": 5,
-			"description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
-		},
-		{
-			"id": "05",
-			"title": "The Dark Knight",
-			"genre": 2,
-			"rating": 5,
-			"description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice."
-		},
-		{
-			"id": "06",
-			"title": "Forrest Gump",
-			"genre": 3,
-			"rating": 4,
-			"description": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold through the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart."
-		},
-		{
-			"id": "07",
-			"title": "Jurassic Park",
-			"genre": 4,
-			"rating": 4,
-			"description": "A pragmatic paleontologist visiting an almost complete theme park is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose."
-		},
-		{
-			"id": "08",
-			"title": "The Matrix",
-			"genre": 2,
-			"rating": 5,
-			"description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."
-		}
-	]
-}
+[
+	{
+		"id": "01",
+		"title": "Harry Potter and The Prisoner of Azkaban",
+		"genre": 0,
+		"rating": 4,
+		"description": "Harry, Ron and Hermoine return to Hogwarts just as they learn about Sirius Black and his plans to kill Harry. However, when Harry runs into him, he learns that the truth is far from reality."
+	},
+	{
+		"id": "02",
+		"title": "Titanic",
+		"genre": 1,
+		"rating": 2,
+		"description": "Ship sinks and Leonardo DiCaprio dies"
+	},
+	{
+		"id": "03",
+		"title": "Groundhog Day",
+		"genre": 2,
+		"rating": 4,
+		"description": "Phil, a self-centred weatherman, goes to the town of Punxsutawney for an assignment. He is later shocked when he wakes up the next morning and realises that he is reliving the same day over and over."
+	},
+	{
+		"id": "04",
+		"title": "The Godfather",
+		"genre": 1,
+		"rating": 5,
+		"description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+	},
+	{
+		"id": "05",
+		"title": "The Dark Knight",
+		"genre": 2,
+		"rating": 5,
+		"description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice."
+	},
+	{
+		"id": "06",
+		"title": "Forrest Gump",
+		"genre": 3,
+		"rating": 4,
+		"description": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold through the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart."
+	},
+	{
+		"id": "07",
+		"title": "Jurassic Park",
+		"genre": 4,
+		"rating": 4,
+		"description": "A pragmatic paleontologist visiting an almost complete theme park is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose."
+	},
+	{
+		"id": "08",
+		"title": "The Matrix",
+		"genre": 2,
+		"rating": 5,
+		"description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."
+	}
+]
